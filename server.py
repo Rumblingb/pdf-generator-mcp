@@ -2,7 +2,7 @@
 """PDF Generator MCP — Generate PDFs from HTML, text, or URLs."""
 
 import json, base64, io, os, re, tempfile
-from mcp.server import Server, stdio_server
+from mcp.server.lowlevel import Server, stdio_server
 import httpx
 
 server = Server("pdf-generator-mcp")
